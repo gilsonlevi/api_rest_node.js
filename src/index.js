@@ -1,19 +1,20 @@
 const express = require('express')
+const { v4: uuidv4} = require('uuid');
 const app = express()
-// const path = require('path');
+app.use(express.json())
 
+// const path = require('path');
+const projects = []
 
 app.get('/projects', function(request, response){
-    const {title, owner, page} = request.query
-    console.log(title, owner, page)  
-    return response.json([
-        'Projeto 1',
-        'Projeto 2'
-    ])
+    return response.json(projects)
     // response.sendFile(path.join(__dirname, '/index.html'));
 })
 
 app.post('/projects', function(request, response){
+    const {name, owner} = request.body
+    console.log(name, owner)  
+
     return response.json([
         'Projeto 1',
         'Projeto 2',
@@ -21,7 +22,12 @@ app.post('/projects', function(request, response){
     ])
 })
 
-app.put('/projects/:id', function(request, response){
+app.put('/projects/:id/', function(request, response){
+    const {name, owner} = request.body
+    const {id} = request.params
+
+    console.log(id, name, owner)  
+
     return response.json([
         'Projeto 4',
         'Projeto 2',
@@ -29,7 +35,7 @@ app.put('/projects/:id', function(request, response){
     ])
 })
 
-app.delete('/projects/:id', function(request, response){
+app.delete('/projects/:id/', function(request, response){
     return response.json([
         'Projeto 2',
         'Projeto 3'
