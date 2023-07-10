@@ -13,3 +13,7 @@ Toda vez que há uma mudança ele atualiza sistema
 METODO GET: Serve para buscar coisas
 
 METODO POST: Enviar uma informação
+ 
+METODO PUT: Serve para atualizar informações
+
+METODO DELETE: Serve para excluir informações
