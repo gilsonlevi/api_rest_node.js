@@ -1,6 +1,10 @@
-# API restful com node
+# Documentação API - RESTFUL com Node.js
 
-<h1>PACKAGE.JSON: é um arquivo de um projeto javascript que é responsável por guardar</h1>
+Anotações de estudo para criação de API's com Node.js
+
+#Introdução
+
+PACKAGE.JSON: é um arquivo de um projeto javascript que é responsável por guardar
 informações, scripts e controle de versionamento de bibliotecas do projetos.
 Essas dependências são gerenciadas pelo NPM.
 
