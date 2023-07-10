@@ -4,6 +4,11 @@ Anotações de estudo para criação de API's com Node.js
 
 #Introdução
 
+```bash
+cd nome-do-projeto
+npm start
+```
+
 PACKAGE.JSON: é um arquivo de um projeto javascript que é responsável por guardar
 informações, scripts e controle de versionamento de bibliotecas do projetos.
 Essas dependências são gerenciadas pelo NPM.
