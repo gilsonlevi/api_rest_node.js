@@ -2,19 +2,15 @@
 
 Anotações de estudo para criação de API's com Node.js
 
-#Introdução
+# Introdução 
 
-```bash
-cd nome-do-projeto
-npm start
-```
+## Informações Basicas
 
 PACKAGE.JSON: é um arquivo de um projeto javascript que é responsável por guardar
 informações, scripts e controle de versionamento de bibliotecas do projetos.
 Essas dependências são gerenciadas pelo NPM.
 
-O que é uma HTTP request? Uma visão geral do HTTP - HTTP | 
-MDN As mensagens enviadas pelo cliente, geralmente um navegador da Web,
+As mensagens enviadas pelo cliente, geralmente um navegador da Web,
 são chamadas de solicitações (requests), ou também requisições, e as 
 mensagens enviadas pelo servidor como resposta são chamadas de respostas (responses).
 
@@ -28,3 +24,8 @@ METODO POST: Enviar uma informação
 METODO PUT: Serve para atualizar informações
 
 METODO DELETE: Serve para excluir informações
+
+# Criação do projeto
+```
+npm init
+```
