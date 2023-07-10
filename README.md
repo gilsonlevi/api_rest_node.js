@@ -1,0 +1,21 @@
+# API restful com node
+
+<h1>PACKAGE.JSON: é um arquivo de um projeto javascript que é responsável por guardar</h1>
+informações, scripts e controle de versionamento de bibliotecas do projetos.
+Essas dependências são gerenciadas pelo NPM.
+
+O que é uma HTTP request? Uma visão geral do HTTP - HTTP | 
+MDN As mensagens enviadas pelo cliente, geralmente um navegador da Web,
+são chamadas de solicitações (requests), ou também requisições, e as 
+mensagens enviadas pelo servidor como resposta são chamadas de respostas (responses).
+
+NODEMON: Serve para ajudar o programador no desenvolvimento da aplicação. 
+Toda vez que há uma mudança ele atualiza sistema
+
+METODO GET: Serve para buscar coisas
+
+METODO POST: Enviar uma informação
+ 
+METODO PUT: Serve para atualizar informações
+
+METODO DELETE: Serve para excluir informações
