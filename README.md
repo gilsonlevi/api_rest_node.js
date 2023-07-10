@@ -26,6 +26,16 @@ METODO PUT: Serve para atualizar informações
 METODO DELETE: Serve para excluir informações
 
 # Criação do projeto
-```
+
+```bash
 npm init
+npm install express
 ```
+
+## Criar uma pasta src e dentro um arquivo index.js
+
+```bash
+mkdir src
+```
+
+
