@@ -38,4 +38,17 @@ npm install express
 mkdir src
 ```
 
+Iniciando projeto:
+```js
+const express = require('express')
+const app = express()
+
+app.get('/', function(request, response){
+    return response.send('Olá dev')
+}
+
+app.listen(300)
+
+```
+
 
