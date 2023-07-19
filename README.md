@@ -51,6 +51,11 @@ app.listen(300)
 
 ```
 
+Para rodar o servidor, entre na linha de comando e utilize o comando:
+```bash
+node index.js
+```
+
 Para fazer rotas com caminhos diferentes
 ```js
 app.get("/sobre", function(req, res){
@@ -64,3 +69,9 @@ app.get("/ola/:cargo/:nome", function(req, res){
     res.send("<h1>Olá " + req.params.nome + "</h1>" + "<h2> Seu cargo é: " + req.params.cargo + "</h2>")
 })
 ```
+A cada alteração no codigo é preciso reiniciar o servidor node. Para automatiza essa função utilizamos o comando npm:
+```bash
+npm install nodemon -g
+```
+
+
