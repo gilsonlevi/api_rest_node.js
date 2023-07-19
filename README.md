@@ -51,4 +51,16 @@ app.listen(300)
 
 ```
 
+Para fazer rotas com caminhos diferentes
+```js
+app.get("/sobre", function(req, res){
+    res.send("Minha pagina sobre")
+})
+```
 
+Você pode utilizar paramentos para a pesquisa usando: "/:" e o nome do parametro
+```js
+app.get("/ola/:cargo/:nome", function(req, res){
+    res.send("<h1>Olá " + req.params.nome + "</h1>" + "<h2> Seu cargo é: " + req.params.cargo + "</h2>")
+})
+```
