@@ -51,6 +51,11 @@ app.listen(300)
 
 ```
 
+Dentro de um metodo GET podemos fazer uma response (resposta) utilizando:
+```js
+resquest.send("Seu texto aqui")
+```
+
 Para rodar o servidor, entre na linha de comando e utilize o comando:
 ```bash
 node index.js
