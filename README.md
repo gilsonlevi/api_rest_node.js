@@ -86,6 +86,7 @@ nodemon index.js
 ```
 
 Para exibir um arquivo HTML criamos o metodo GET:
+
 ```js
 app.get("/", function(req, res){
     // res.sendFile(__dirname + '../html/index.html');
