@@ -79,4 +79,12 @@ A cada alteração no codigo é preciso reiniciar o servidor node. Para automati
 npm install nodemon -g
 ```
 
+E agora iniaciamos o servidor com o comando:
+
+```bash
+nodemon index.js
+```
+
+Para exibir um arquivo HTML criamos o metodo GET:
+
 
