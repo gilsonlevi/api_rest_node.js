@@ -95,3 +95,33 @@ app.get("/", function(req, res){
 })
 ```
 
+## Conectando o node com mysql
+
+Primeiramento devemos instalar o sequelize que é uma ORM utilizando o comando:
+
+```bash
+npm install --save sequelize
+```
+Assim como:
+```bash
+npm i --save mysql2
+```
+
+Para realizar a conexão:
+```js
+const Sequelize = require('sequelize')
+const sequelize = new Sequelize('test', 'root', '@JNL12345silva', {
+    host: "localhost",
+    dialect: 'mysql'
+}) 
+```
+
+E para confirmar se aconexao funcionou:
+```js
+sequelize.authenticate().then(function(){
+    console.log("Conectou")
+}).catch(function(erro){
+    cosnole.log("Falha ao se conectar: " + erro)
+})
+```
+
