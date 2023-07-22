@@ -140,3 +140,12 @@ E para enviarmos esse model para o banco fazemos o seguinte:
 ```js
 Postagem.sync({force: true})
 ```
+
+Para adicionarmos um registro no banco utilizamos o seguinte codigo:
+
+```js
+Postagem.create({
+    titulo: titulo,
+    conteudo: conteudo
+})
+```
