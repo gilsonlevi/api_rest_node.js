@@ -149,3 +149,8 @@ Postagem.create({
     conteudo: conteudo
 })
 ```
+
+Vamos utilizar agora o handlebars, para instalar:
+```bash
+npm install --save express-handlebars
+```
