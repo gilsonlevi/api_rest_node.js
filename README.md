@@ -125,3 +125,18 @@ sequelize.authenticate().then(function(){
 })
 ```
 
+Para modelar um objeto para o banco de dados fazemos o seguinte:
+```js
+const Postagem = sequelize.define('postagens', {
+    titulo: {
+        type: Sequelize.STRING
+    },
+    conteudo: {
+        type: Sequelize.TEXT
+    }
+})
+```
+E para enviarmos esse model para o banco fazemos o seguinte:
+```js
+Postagem.sync({force: true})
+```
