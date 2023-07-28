@@ -186,4 +186,21 @@ Dentro de layouts criamos um main.handlebars com o seguinte codigo:
 </html>
 ```
 
+Para conseguirmos receber as informações dadas pelo usuario utilizamos o body-parser:
+
+```bash
+npm install --save body-parser
+```
+
+```js
+E para configura-lo fazemos:
+const bodyParser = require('body-parser')
+// Body Parser 
+app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.json())
+app.post('/adicionar', function(req, res){
+res.send("Texto: " + req.body.titulo + " Conteúdo: " + req.body.conteudo)
+     })
+```
+
 
