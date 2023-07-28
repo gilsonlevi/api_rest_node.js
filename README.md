@@ -192,8 +192,8 @@ Para conseguirmos receber as informações dadas pelo usuario utilizamos o body-
 npm install --save body-parser
 ```
 
-```js
 E para configura-lo fazemos:
+```js
 const bodyParser = require('body-parser')
 // Body Parser 
 app.use(bodyParser.urlencoded({extended: false}))
