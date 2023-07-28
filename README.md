@@ -154,3 +154,36 @@ Vamos utilizar agora o handlebars, para instalar:
 ```bash
 npm install --save express-handlebars
 ```
+
+Para adiciona-la e configura-la no projeto:
+
+```js
+// Config
+    // Template Engine
+    app.engine('handlebars', handlebars.engine({defaultLayout: 'main'}))
+    app.set('view engine', 'handlebars')
+    // Conexão com o banco de dados MySql
+    const sequelize = new Sequelize('escola_spring', 'root', '@JNL12345silva', {
+    host: "localhost",
+    dialect: 'mysql'
+    })
+```
+Para usarmos o handlebars criamos uma pasta com o nome de 'views' e dentro outra pasta com nome layouts
+
+Dentro de layouts criamos um main.handlebars com o seguinte codigo:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postagens Node.jS</title>
+</head>
+<body>
+    {{{body}}}
+    
+</body>
+</html>
+```
+
+
